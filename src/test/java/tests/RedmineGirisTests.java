@@ -45,8 +45,8 @@ public class RedmineGirisTests {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
         anaSayfa.tusaBasXpath(anaSayfa.projeLink);
     }
-    //@AfterEach
-    //void tearDown(){
-    //    driver.close();
-    //}
+    @AfterEach
+    void tearDown(){
+        driver.close();
+    }
 }
